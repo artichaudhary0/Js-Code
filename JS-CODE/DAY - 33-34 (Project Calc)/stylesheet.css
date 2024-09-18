@@ -1,0 +1,20 @@
+body {
+  background-color: cornflowerblue;
+}
+
+.calculate {
+  width: 200px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+button:hover {
+  background-color: green;
+}
+
+button:active {
+  background-color: orange;
+}

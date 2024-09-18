@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Form validation</title>
+  </head>
+  <body>
+    <form id="jsForm">
+      <label for="username">username</label>
+      <input type="text" id="username" required />
+      <span id="usernameError"></span>
+      <br />
+      <label for="age">age</label>
+      <input type="number" id="age" required />
+      <span id="ageError"></span>
+      <br />
+
+      <label for="email">email</label>
+      <input type="email" id="email" required />
+      <span id="emailError"></span>
+      <br />
+      <label for="password">password</label>
+      <input type="password" id="password" required />
+      <span id="passwordError"></span>
+      <br />
+      <label for="confirmPassword">confirm password</label>
+      <input type="password" id="confirmPassword" required />
+      <span id="confirmPasswordError"></span>
+      <br />
+
+      <button type="submit">Submit</button>
+    </form>
+    <script src="Script.Js"></script>
+  </body>
+</html>

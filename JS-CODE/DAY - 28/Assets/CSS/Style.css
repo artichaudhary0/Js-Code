@@ -1,0 +1,44 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background: pink;
+}
+
+
+.clock{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border: 10px solid black;
+	border-radius: 50%;
+	background: white;
+}
+
+.hand{
+	position: absolute;
+	width: 50%;
+	height: 6px;
+	background: black;
+	top: 50%;
+	transform-origin: 100%;
+	transition: transform 0.5s cubic-bezier(0.3, 2.4 , 0.3 , 1)
+}
+
+
+#hour {
+	height: 10px;
+	background: black;
+}
+
+#minute {
+	height: 8px;
+	background: grey;
+}
+
+#second {
+	height: 6px;
+	background: red;
+}
