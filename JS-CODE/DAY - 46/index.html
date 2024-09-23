@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .slider {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slides {
+            display: flex;
+            transition: tranform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            height: 100vh;
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .model {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 6);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .model-content {
+            background: white;
+            padding: 30px;
+            border-radius: 24px;
+            text-align: center;
+        }
+
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 20px;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">1</div>
+            <div class="slide">2</div>
+            <div class="slide">3</div>
+            <div class="slide">4</div>
+            <div class="slide">5</div>
+            <div class="slide">6</div>
+        </div>
+        <div class="prev">Prev</div>
+        <div class="next">Next</div>
+    </div>
+
+    <div class="model" id="myModel">
+        <div class="model-content">
+            <p>This is model web page</p>
+            <button id="closeModel">Close</button>
+        </div>
+    </div>
+
+    <script>
+        const slides = document.querySelector(".slides");
+        const slideCount = document.querySelectorAll(".slide").length; // 6
+        let currentSlide = 0;
+        const intervelTime = 3000;
+        let slideIntervel;
+
+        // move slide to next slide
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slideCount;
+            updateSlide();
+        }
+
+        // move silde to previous slide
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slideCount) % slideCount;
+            updateSlide();
+        }
+
+        function updateSlide() {
+            slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        // Automatic slide intervel
+        function startSlider() {
+            slideIntervel = setInterval(nextSlide, intervelTime);
+        }
+
+        // stop the slider
+        function stopSlider() {
+            clearInterval(slideIntervel);
+        }
+
+        // EVENT LISTNERS
+        document.querySelector(".prev").addEventListener("click", () => {
+            prevSlide();
+            stopSlider();
+            startSlider();
+        });
+
+        document.querySelector(".next").addEventListener("click", () => {
+            nextSlide();
+            stopSlider();
+            startSlider();
+        });
+
+        // automatically start the slider
+        startSlider();
+
+        // model logic
+        const model = document.getElementById("myModel");
+        const colseModelBtn = document.getElementById("closeModel");
+
+        // show model after 5 sec
+        setTimeout(() => {
+            model.style.display = "flex";
+        }, 5000);
+
+        colseModelBtn.addEventListener("click", () => {
+            model.style.display = "none";
+        });
+    </script>
+</body>
+
+</html>
