@@ -1,0 +1,153 @@
+<!-- 
+Make Counter
+Make Countdown 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #ededed;
+    }
+    .container {
+      text-align: center;
+      background-color: #bde0fe;
+      padding: 50px;
+      border-radius: 20px;
+      color: black;
+      box-shadow: 0px 10px 16px rbga(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .counter-display,
+    .countdown-display {
+      font-size: 40px;
+      margin: 20px 0;
+    }
+
+    button,
+    input {
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      color: #778da9;
+      margin: 10px;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #778da9;
+      color: white;
+    }
+
+    .input-field {
+      width: 60px;
+      text-align: center;
+      font-size: 18px;
+      margin-right: 10px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Counter and Countdown</h1>
+
+      <!-- Counter -->
+      <div>
+        <h2>Counter</h2>
+        <div class="counter-display" id="counterDisplay">0</div>
+        <button id="incrementbtn">Increment</button>
+        <button id="decrementbtn">Decrement</button>
+        <button id="resetbtn">Reset</button>
+      </div>
+
+      <!-- Countdown -->
+      <div>
+        <h2>Countdown</h2>
+        <div class="countdown-display" id="countdownDisplay">10</div>
+        <input type="number" class="input-field" id="countdownInput" min="1" />
+        <button id="startbtn">Start</button>
+        <button id="stopbtn">Stop</button>
+        <button id="resetCountdownbtn">Reset</button>
+      </div>
+    </div>
+
+    <script>
+      // counter
+      let counter = 0;
+      const counterDisplay = document.getElementById("counterDisplay");
+      document.getElementById("incrementbtn").addEventListener("click", () => {
+        counter = counter + 1; // counter ++
+        counterDisplay.textContent = counter;
+      });
+
+      document.getElementById("decrementbtn").addEventListener("click", () => {
+        counter--;
+        counterDisplay.textContent = counter;
+      });
+
+      document.getElementById("resetbtn").addEventListener("click", () => {
+        counter = 0;
+        counterDisplay.textContent = counter;
+      });
+
+      // countdown
+      let countDown = 10;
+      let countDownIntervel;
+      const countdownDisplay = document.getElementById("countdownDisplay");
+      const customInput = document.getElementById("countdownInput");
+
+      function startCounter() {
+        if (countDownIntervel) clearInterval(countDownIntervel);
+        countdownDisplay.textContent = countDown;
+        countDownIntervel = setInterval(() => {
+          countDown--;
+          countdownDisplay.textContent = countDown;
+          changeBackground();
+          if (countDown <= 0) {
+            clearInterval(countDownIntervel);
+            countdownDisplay.textContent = "Time's Up";
+            document.body.style.backgroundColor = "#f7f7f7"; // reset background
+          }
+        }, 1000);
+      }
+
+      function changeBackground() {
+        const intensity = Math.floor((countDown / 10) * 255);
+        document.body.style.backgroundColor = `rbg(255, ${intensity},${intensity})`; // dom
+      }
+
+      document.getElementById("startbtn").addEventListener("click", () => {
+        const customValue = parseInt(customInput.value);
+        countDown = customValue > 0 ? customValue : countDown;
+        startCounter();
+      });
+
+      document.getElementById("stopbtn").addEventListener("click", () => {
+        clearInterval(countDownIntervel);
+      });
+
+      document
+        .getElementById("resetCountdownbtn")
+        .addEventListener("click", () => {
+          clearInterval(countDownIntervel);
+          countDown = 10;
+          countdownDisplay.textContent = countDown;
+          document.body.style.backgroundColor = "#f7f7f7";
+        });
+    </script>
+  </body>
+</html>
