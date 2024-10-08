@@ -148,39 +148,70 @@ This course is designed to provide a comprehensive introduction to JavaScript, c
 ## Week 12 : OOP Concepts
 - **Topic** : OOP Concepts
 - **Concepts** :
-  
-
-Class & Objects, this keyword, new keyword, constructors
-Topic: Inheritance & Polymorphism
-Concepts: Types of inheritance and polymorphism.
+  <ul>
+      <li>Class & Objects</li>
+      <li>Pillars of OPPS
+          <ul>
+              <li>Encapsulation</li>
+          <li>Inheritance
+              <ul>
+                  <li>Types of Inheritance
+                    <ul>
+                        <li>Prototypal Inheritance</li>
+                    <li>Classical Inheritance</li>
+                    <li>Functional Inheritance</li>
+                    </ul>
+              </li>
+              </ul>
+          </li>
+          <li>Polymorphism</li>
+          <li>Abstraction</li>
+          </ul>
+      </li>
+  </ul>
+- **Project** : Ecommerce with concept of Class & Object  
 
 ## Week 13 : Timing Functions
 - **Topic** : Timing Functions
 - **Concepts** :
-setTimeout, setInterval, creating a counter
+  <ul>
+      <li>setTimeout</li>
+      <li>setInterval</li>
+  </ul>
+- **Project** :
+    creating a counter
 
 ## Week 14 : Working with DOM & JSON
 - **Topic** : Working with DOM & JSON
 - **Concepts** :
-Creating HTML using JS, Introduction to JSON, storing and retrieving data
+  <ul>
+      <li>Creating HTML using JS</li>
+      <li>Introduction to JSON</li>
+      <li>storing and retrieving data</li>
+  </ul>
 
 ## Week 15 : AJAX & API
 - **Topic** : AJAX & API
 - **Concepts** :
-AJAX introduction, Fetch API, making API calls
+      <ul>
+          <li>AJAX introduction</li>
+          <li>Fetch API</li>
+          <li>Making API Calls</li>
+      </ul>
 
 ## Week 16 : Projects
 - **Project** : Weather API
-- **Project** : Begin project
-Project: Corona API
-Project Day 1: Begin project
-Project: Add to Cart
-Various Stages: Add product, view product, manage cart.
+- **Project** : Corona API
 
 ## Week 17 : Import, Export & Callbacks
 - **Topic** : Import, Export & Callbacks
 - **Concepts** :
-Import and export modules, spread operators, callbacks, promises
+  <ul>
+      <li>Import and export modules</li>
+      <li>Spread Operators</li>
+      <li>Callbacks</li>
+      <li>Promises</li>
+  </ul>
 
 ## Week 18 : Async & Await
 - **Topic** : Promises & Async/Await
