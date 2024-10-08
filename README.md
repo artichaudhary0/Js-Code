@@ -12,81 +12,143 @@ This course is designed to provide a comprehensive introduction to JavaScript, c
 ## Week 2 : Output Methods
 - **Topic** : Output Show Method
 - **Methods Covered** :
-
-  console.log()
-  document.write()
-  alert()
-  innerHTML()
+    <ul>
+      <li>console.log()</li>
+      <li>document.write()</li>
+      <li>alert()</li>
+      <li>innerHTML()</li>
+   </ul>
 
 ## Week 3 : Data Types & Variables
 - **Topic** : Data Types & Variables
 - **Concepts** :
-What is a variable?
-Understanding data types
-Declaring and initializing variables
+  <ul>
+    <li>What is a variable?</li>
+    <li>Understanding data types</li>
+    <li>Declaring and initializing variables</li>
+  </ul>
+
+
+
 
 ## Week 4 : Operators
 - **Topic** : Operators
 - **Concepts** :
-Arithmetic, Assignment, Comparison, Logical operators
-Conversion with console.log and innerHTML
+    <ul>
+      <li>Arithmetic</li>
+      <li>Assignment</li>
+      <li>Comparison</li>
+      <li>Logical operators</li>
+   </ul>
 
-Topic: Some Logical Programs
-Projects:
-Grade, Bill, Interest, Employee Salary calculations
+- **Projects** :
+    <ul>
+      <li>Grade</li>
+      <li>Bill</li>
+      <li>Interest</li>
+      <li>Employee Salary calculations</li>
+   </ul>
 
 ## Week 5 : Basic Calculation Project
 
 - **Topic** : Basic Calculation Project
-- **Project** : Initiate project setup
+- **Project** : Calculator
 
 ## Week 6 : Conditional Statements
 
 - **Topic** : Conditional Statements
-- **Concepts** : If statements, nested if statements, range programs, if-else ladders, switch case statements.
-
-Topic: Conditional Statement Project
-Project : Begin conditional statement project.
+- **Concepts** : 
+    <ul>
+      <li>If statements</li>
+      <li>Nested if statements</li>
+      <li>if-else ladders</li>
+      <li>switch case statements</li>
+   </ul>
 
 ## Week 7 : Loops
 - **Topic** : Loops
 - **Concepts** :
-while and do…while loops
-Patterns, continue, goto statements
+  <ul>
+      <li>while</li>
+      <li>do…while</li>
+      <li>Patterns</li>
+      <li>continue</li>
+      <li>goto statements</li>
+   </ul>
 
 ## Week 8 : Functions
 - **Topic** : Functions
 - **Concepts** :
-What is a function?
-Normal Functions, Parameters in functions, return type
-
-Topic: Function Types
-Concepts:
-Function types: normal, recursion, nested functions, closures, arrow functions, IIFE
+  <ul>
+      <li>What is a Function?</li>
+      <li>Normal Functions</li>
+      <li>Parameters in Functions</li>
+      <li>Return Type</li>
+      <li>Recursion</li>
+      <li>Nested Functions</li>
+      <li>Closures</li>
+      <li>Arrow Functions</li>
+      <li>IIFE</li>
+      <li>Hoisting</li>
+   </ul>
 
 ## Week 9 : Array & String
 - **Topic** : Array & String
 - **Concepts** :
-Looping through arrays, array methods: push, pop, shift, unshift, splice
-16-Jul-2024
-Topic: Array with Functions
-Concepts: Built-in functions of Array (map, filter, forEach, indexOf)
+  <ul>
+      <li>Looping through arrays</li>
+      <li>Normal Functions</li>
+      <li>array methods
+      <ul>
+        <li>push</li>
+        <li>pop</li>
+        <li>shift</li>
+        <li>unshift</li>
+        <li>splice</li>
+      </ul>
+      </li>
+   </ul>
+   
+- **Topic** : Array with Functions
+- **Concepts** :
+   <ul>
+      <li>Built-in functions of Array
+      <ul>
+        <li>map</li>
+        <li>filter</li>
+        <li>forEach</li>
+        <li>indexOf()</li>
+      </ul>
+      </li>
+   </ul>
+
 
 ## Week 10 : Objects
 - **Topic** : Objects
 - **Concepts** :
-JS Objects, Object properties, methods
-Topic: Objects with Arrays
-Concepts: Looping through objects and arrays, accessing properties
+  <ul>
+      <li>JS Objects</li>
+      <li>Object properties</li>
+      <li>methods</li>
+  </ul>
+- **Object with Array** :
+  <ul>
+      <li>Looping through objects and array</li>
+      <li>Accessing Properties</li>
+  </ul>
 
 ## Week 11 : Events
 - **Topic** : Events
 - **Concepts** :
-HTML DOM, event handling using addEventListener
+  <ul>
+      <li>HTML DOM</li>
+      <li>event handling using addEventListener</li>
+  </ul>
 
 ## Week 12 : OOP Concepts
 - **Topic** : OOP Concepts
 - **Concepts** :
+  
 
 Class & Objects, this keyword, new keyword, constructors
 Topic: Inheritance & Polymorphism
