@@ -1,7 +1,5 @@
 ## JavaScript Course 
-Overview
-This course is designed to provide a comprehensive introduction to JavaScript, covering both ES5 and ES6 concepts. Throughout the course, you'll learn the fundamentals of JavaScript, including data types, variables, operators, control structures, functions, objects, and advanced topics like AJAX and APIs.
-
+This Repository provides a comprehensive to JavaScript which we have studied throughout this module.
 
 ## Course Schedule
 
@@ -218,7 +216,7 @@ This course is designed to provide a comprehensive introduction to JavaScript, c
 - **Concepts** : Handling asynchronous operations with async and await with Fetch API.
   
 ## Conclusion
-This course is designed to build a strong foundation in JavaScript, equipping students with the knowledge and skills needed to develop web applications. Each week includes lectures, practical projects, and hands-on exercises to reinforce learning.
+This repository is designed to build a strong foundation in JavaScript, equipping students with the knowledge and skills needed to develop web applications. Each week includes lectures, practical projects, and hands-on exercises to reinforce learning.
 
 For any questions or clarifications, feel free to reach out!
 
