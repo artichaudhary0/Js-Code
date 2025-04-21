@@ -1,4 +1,4 @@
-## JavaScript Course 
+## This Repository contain JavaScript Concept 
 This Repository provides a comprehensive to JavaScript which we have studied throughout this module.
 
 ## Course Schedule
